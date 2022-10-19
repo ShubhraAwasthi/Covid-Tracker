@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@900&family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@700&family=Roboto:wght@900&family=Staatliches&display=swap');
+
+
+
+.news-image {
+    height: 50%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.wrapper {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+  }
+  
+  .typing-demo {
+    width: 20rem;
+    animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
+  /* font-family: 'Roboto', sans-serif;*/
+  font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    color: rgb(235, 237, 247);
+    
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+.card {
+    display: inline-block ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    width: 95%;
+    height: 80%;
+    overflow: auto;
+    border-radius: 2rem;
+    font-size: 1rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    background-image: none;
+}
+.heading-container {
+    width:100vw;
+    height: 40vh;
+    background-image: url("background-edit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin-top:3vh;
+    margin-bottom: 3vh;
+}
+
+.card-title {
+    font-family: 'Merriweather', serif;
+}
+.card-text{
+    font-family: 'Lora', serif;
+}
+.card-link {
+    font-family: 'Lora', serif;
+}
+a {
+    color:rgb(8, 8, 43);
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    position: relative;
+}
+.navbar-expand-lg .navbar-nav {
+    position: absolute;
+    flex-direction: row;
+    right: 10px;
+}
+}
+
+.nav-item{
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color:white !important;
+}
+.navbar-brand{
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color: white;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 63, 63);
+    text-decoration: none;
+}

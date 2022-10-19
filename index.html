@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COVID19 INFO</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/701ed08848.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+   <section id="title">
+     <div class="container-fluid" >
+       <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="navbar-brand" href="#">C<i class="fas fa-virus"></i>VID19 INFO</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="#">HOME</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="About-Covid19\about.html">RESOURCES</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="Project_news\index.html">COVID19 NEWS</a>
+             </li>
+             
+           </ul>
+         </div>
+       </nav>
+</section>
+
+<div class="bg-img">
+  <!-- <div class="img-txt">
+    <h1>UNITED AGAINST</h1>
+    <h1>COVID19</h1>
+  </div> -->
+  <img class="header-image" src="images/header-img.jpg" alt="slide1">
+</div>
+
+
+
+<!-- <div class="HOME">
+  <div class="search">
+    <label for="place" ><h3>Search your district or country</h3></label>
+    <div class="input-group">
+      <input type="search" class="form-control rounded input-box" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" />
+      <button type="button" class="btn btn-outline-dark"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+</div> -->
+
+  <!-- main content -->
+<section id="main-content">
+      <div class="content">
+          <div class="container">
+              <!-- country select -->
+              <div class="row">
+                  <div class="col-3 col-md-6 col-sm-12">
+                      <div class="box">
+                          <div class="country-select" id="country-select">
+                              <div class="country-select-toggle" id="country-select-toggle">
+                                  <span>
+                                      WORLD
+                                  </span>
+                                  <i class="fa fa-chevron-down"></i>
+                              </div>
+                              <div class="country-select-list" id="country-select-list">
+                                  <input type="text" placeholder="Search...">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- end country select -->
+
+              <!-- tracking information -->
+              <div class="row">
+                <div class="left-content">
+                  <!-- left content -->
+                  <!-- <div class="col-8 col-md-12 col-sm-12"> -->
+                      <div class="row">
+                          <!-- counter -->
+                          <div class="col-4 col-md-4 col-sm-12">
+                              <div class="box box-hover">
+                                  <div class="count count-confirmed">
+                                      <div class="count-icon">
+                                          <i class="fas fa-virus"></i>
+                                      </div>
+                                      <div class="count-info">
+                                          <h5 id="confirmed-total">0</h5>
+                                          <span>confirmed</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- counter -->
+                          <!-- counter -->
+                          <div class="col-4 col-md-4 col-sm-12">
+                              <div class="box box-hover">
+                                  <div class="count count-recovered">
+                                      <div class="count-icon">
+                                          <i class="fas fa-smile"></i>
+                                      </div>
+                                      <div class="count-info">
+                                          <h5 id="recovered-total">0</h5></h5>
+                                          <span>recovered</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- counter -->
+                          <!-- counter -->
+                          <div class="col-4 col-md-4 col-sm-12">
+                              <div class="box box-hover">
+                                  <div class="count count-death">
+                                      <div class="count-icon">
+                                          <i class="fas fa-frown"></i>
+                                      </div>
+                                      <div class="count-info">
+                                          <h5 id="death-total">0</h5>
+                                          <span>deaths</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- counter -->
+
+                          <!-- all time chart -->
+                          <div class="col-12">
+                              <div class="box">
+                                  <div class="box-header">
+                                      all times
+                                  </div>
+                                  <div class="box-body">
+                                      <div id="all-time-chart"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- end all time chart -->
+                      </div>
+                  </div>
+                </div>
+                  <!-- end left content -->
+
+                  <!-- right content -->
+                  <div class="right-content">
+                    <!-- <div class="col-4 col-md-12 col-sm-12"> -->
+                        <!-- 30 days chart -->
+                        <div class="box">
+                            <div class="box-header">
+                                last 30 days
+                            </div>
+                            <div class="box-body">
+                                <div id="days-chart"></div>
+                            </div>
+                        </div>
+                        <!-- end 30 days chart -->
+
+                        <!-- recovery rate chart -->
+                        <div class="box">
+                            <div class="box-header">
+                                Recovery rate
+                            </div>
+                            <div class="box-body">
+                                <div id="recover-rate-chart"></div>
+                            </div>
+                        </div>
+                        <!-- end recovery rate chart -->
+
+                        <!-- top country affected -->
+                        <div class="box">
+                            <div class="box-header">
+                                Top Countries affected
+                            </div>
+                            <div class="box-body">
+                                <table class="table-countries table table-striped" id="table-countries">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Country
+                                            </th>
+                                            <th>Confirmed</th>
+                                            <th>Recovered</th>
+                                            <th>Deaths</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end top country affected -->
+                    </div>
+                  </div>
+                  <!-- end right content -->
+              </div>
+              <!-- end tracking information -->
+          </div>
+      </div>
+</section>
+      <!-- end main content -->
+    <!-- footer -->
+    <div class="footer">
+        Source from <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc#b07f97ba-24f4-4ebe-ad71-97fa35f3b683" target="_blank">api.covid19api.com</a>
+    </div>
+    <!-- end footer -->
+
+    <!-- loader -->
+    <div class="loader">
+        <i class="fas fa-virus fa-spin"></i>
+    </div>
+    <!-- end loader -->
+
+    <!-- apexchart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- JS -->
+    <script src="fetchApi.js"></script>
+    <script src="covidApi.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
